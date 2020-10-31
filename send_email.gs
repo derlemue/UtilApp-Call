@@ -106,10 +106,10 @@
 				var vBody = email_draft.evaluate().getContent();
 				var vBuildingTemp = row[vBuilding]
 				Logger.log(vBody);
-				var vSub = "Einsatz Rufbereitschaft Utilities im Gebäude: " + vBuildingTemp + " | Verteiler: " + vInfoSpreadTemp
+				var vSub = "Einsatz im Gebäude: " + vBuildingTemp + " | Verteiler: " + vInfoSpreadTemp
 				var vBody = email_draft.evaluate().getContent();
 				GmailApp.sendEmail(vAdd, vSub, "HTML seems to be unsupported by your Email", {
-					name: 'Utilities Bereitschafts App',
+					name: 'UtilApp Rufbereitschaft',
 					htmlBody: vBody,
 					from: 'penzberg.pt_bereitschaft_ut@roche.com'
 				})
