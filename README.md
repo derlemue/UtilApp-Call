@@ -3,7 +3,7 @@
 /////////////////////////////////////////////////////////////////////////////////////
 //
 //	UtilApp | Google App Scripts for Utilities Web
-//	|
+//	----------------------------------------------
 //	|- UtilApp-UtilOnCall 
 //	|- gets vars, parses and sends Email from given Google Sheet
 //
