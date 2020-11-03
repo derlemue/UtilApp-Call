@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////////////***
 //
-// Utilities Web App - send_email.gs
+// UtilApp-UtilOnCall | send_email.gs | RC_
 //
 /////////////////////////////////////////////////////////////////////***
 //
@@ -19,14 +19,13 @@
 		Logger.log("[METHOD] onFormSubmit");
 		emailSenderBR();
 	}
-
 ///
 ///	Script to parse Email from Sheet and send by alias
 ///
 	function emailSenderBR(){
 
 /// set variables (shortcuts for Google App Script Classes)
-		var email_draft = HtmlService.createTemplateFromFile("TEST_email_text");
+		var email_draft = HtmlService.createTemplateFromFile("email_text");
 		var ws_input = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Input");
 		var ws_mail = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Mail_Util");
 
@@ -78,13 +77,13 @@
 
 /// Parse Emails from Google Sheet  
 /// get Email address and name from Google Sheet "Mail_Util", repeat for each row)
-		data_mail.forEach(function(row){  
+		data_mail.forEach(function get1(row){  
 			var vAdd = row[vAddr];
 			var vNameTemp = row[vName];
 			Logger.log(vAdd);
     
 /// get variables for Email body from Google Sheet "Input" (last row) and send to Email draft (email_text.html)
-			data_input.forEach(function(row){
+			data_input.forEach(function get2(row){
 				email_draft.vReporter = row[vReporter];
 				email_draft.vCase = row[vCase];
 				email_draft.vDate = Utilities.formatDate(vDate, "Europe/Berlin", "dd.MM.yyyy");
@@ -107,12 +106,8 @@
 				var vBuildingTemp = row[vBuilding]
 				Logger.log(vBody);
 				var vSub = "Einsatz im Gebäude: " + vBuildingTemp + " | Verteiler: " + vInfoSpreadTemp
-				var vBody = email_draft.evaluate().getContent();
-				GmailApp.sendEmail(vAdd, vSub, 'HTML seems to be unsupported by your Email', {
-					'from': 'penzberg.pt_bereitschaft_ut@roche.com',
-                  	'htmlBody': vBody,
-					'name': 'UtilApp Rufbereitschaft'
-                })
+                var vBody = email_draft.evaluate().getContent();
+             		GmailApp.sendEmail(vAdd, vSub, 'HTML seems to be unsupported by your Email', {htmlBody: vBody})
 			})
 		})
 	};
