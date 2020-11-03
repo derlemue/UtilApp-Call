@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////////////***
 //
-// UtilApp-UtilOnCall | send_email.gs | RC_
+// Utilities Web App - send_email.gs
 //
 /////////////////////////////////////////////////////////////////////***
 //
@@ -26,7 +26,7 @@
 	function emailSenderBR(){
 
 /// set variables (shortcuts for Google App Script Classes)
-		var email_draft = HtmlService.createTemplateFromFile("email_text");
+		var email_draft = HtmlService.createTemplateFromFile("TEST_email_text");
 		var ws_input = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Input");
 		var ws_mail = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Mail_Util");
 
@@ -108,11 +108,11 @@
 				Logger.log(vBody);
 				var vSub = "Einsatz im Gebäude: " + vBuildingTemp + " | Verteiler: " + vInfoSpreadTemp
 				var vBody = email_draft.evaluate().getContent();
-				GmailApp.sendEmail(vAdd, vSub, "HTML seems to be unsupported by your Email", {
-					name: 'UtilApp Rufbereitschaft',
-					htmlBody: vBody,
-					from: 'penzberg.pt_bereitschaft_ut@roche.com'
-				})
+				GmailApp.sendEmail(vAdd, vSub, 'HTML seems to be unsupported by your Email', {
+					'from': 'penzberg.pt_bereitschaft_ut@roche.com',
+                  	'htmlBody': vBody,
+					'name': 'UtilApp Rufbereitschaft'
+                })
 			})
 		})
 	};
