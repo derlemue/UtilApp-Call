@@ -106,8 +106,8 @@
 				var vBuildingTemp = row[vBuilding]
 				Logger.log(vBody);
 				var vSub = "Einsatz im Gebäude: " + vBuildingTemp + " | Verteiler: " + vInfoSpreadTemp
-                var vBody = email_draft.evaluate().getContent();
-             		GmailApp.sendEmail(vAdd, vSub, 'HTML seems to be unsupported by your Email', {htmlBody: vBody})
+                		var vBody = email_draft.evaluate().getContent();
+             			GmailApp.sendEmail(vAdd, vSub, 'HTML seems to be unsupported by your Email', {htmlBody: vBody})
 			})
 		})
 	};
