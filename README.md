@@ -2,8 +2,8 @@
 ```
 /////////////////////////////////////////////////////////////////////////////////////
 //
-//	UtilApp | Google App Scripts for Roche Utilities Penzberg
-//	---------------------------------------------------------
+//	UtilApp | Google App Scripts for Roche Utilities Penzberg | RC1
+//	---------------------------------------------------------------
 //	|- UtilApp-UtilOnCall 
 //	|- gets vars, parses and sends Email from given Google Sheet
 //
