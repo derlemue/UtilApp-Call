@@ -22,7 +22,7 @@
 ///
 ///	Script to parse Email from Sheet and send by alias
 ///
-	function emailSenderBR(){
+	function emailSenderCall(){
 
 /// set variables (shortcuts for Google App Script Classes)
 		var email_draft = HtmlService.createTemplateFromFile("email_text");
