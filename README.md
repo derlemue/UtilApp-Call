@@ -15,6 +15,7 @@
 //	|-- .gitignore
 //	|-- LICENSE
 //	|-- README.md
+//  |-- calc_duration.gs
 //	|-- send_email.gs
 //	|-- email_text.html
 //
