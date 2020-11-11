@@ -55,9 +55,9 @@
 //
 //
 //	/email_text.html
-//	 | Info:
-//	 |	contains HTML Email body and variables to get
-//	 |	Email parsed by send_email.gs
+//   | Info:
+//   |	contains HTML Email body and variables to get
+//   |	Email parsed by send_email.gs
 //	 |
 //   | Dependencies:
 //   |  calc_duration.gs
