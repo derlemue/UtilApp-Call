@@ -59,7 +59,7 @@
 //	 |	contains HTML Email body and variables to get
 //	 |	Email parsed by send_email.gs
 //	 |
-//	 | Dependencies:
+//   | Dependencies:
 //   |  calc_duration.gs
 //	 | Source for:
 //	 |	send_email.gs
