@@ -35,6 +35,13 @@
 //	 | Info:
 //	 |	contains project description (your are here)
 //
+//  /calc_duration.gs
+//   | Info:
+//   | script to calculated duration between to times
+//   | from given Google Sheet.
+//	 | Dependencies:
+//	 |	Google Sheet (external)
+//
 //	/send_email.gs
 //	 | Info:
 //	 |	script to get content from given Google Sheet,
@@ -43,14 +50,17 @@
 //	 |
 //	 | Dependencies:
 //	 |	Google Sheet (external)
+//   |  calc_duration.gs
 //	 |	email_text.html (internal)
-//	 |
+//
 //
 //	/email_text.html
 //	 | Info:
 //	 |	contains HTML Email body and variables to get
 //	 |	Email parsed by send_email.gs
-//	 |	
+//	 |
+//	 | Dependencies:
+//   |  calc_duration.gs
 //	 | Source for:
 //	 |	send_email.gs
 //
