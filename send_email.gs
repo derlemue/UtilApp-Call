@@ -29,6 +29,8 @@
 		var ws_input = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Input");
 		var ws_mail = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Mail_Util");
 
+    Logger.log(ws_input.getLastRow())
+
 /// set variables (define sources on Google Sheet)  
 /// set range from column A-Q and set row from "last"-"last"  
 		var data_input = ws_input.getRange("A" + ws_input.getLastRow() + ":Q" + ws_input.getLastRow()).getValues();

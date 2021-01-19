@@ -15,7 +15,7 @@
 ///
 ///	Trigger to fire when new row is added to Google Sheet
 ///
-	function onFormSubmit(e){
+	function onFormSubmit2(e){
 		Logger.log("[METHOD] onFormSubmit");
 		calcTime();
 	}
