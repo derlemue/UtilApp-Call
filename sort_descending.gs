@@ -1,4 +1,4 @@
-function NachZeitstempelAbsteigendSortieren() {
+/* function NachZeitstempelAbsteigendSortieren() {
 
   var spreadsheet = SpreadsheetApp.getActive();
   var sheet = spreadsheet.getActiveSheet();
@@ -18,7 +18,7 @@ function Spalten_Textumbruch() {
   sheet.getRange("A1").activate();
 }
 
-/* function onOpen () {
+ function onOpen () {
 
   NachZeitstempelAbsteigendSortieren();
   Spalten_Textumbruch();
