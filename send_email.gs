@@ -100,6 +100,7 @@
 				email_draft.vInterrup = row[vInterrup];
 				email_draft.vOtherService = row[vOtherService];
 				email_draft.vInfoSpread = row[vInfoSpread];
+        email_draft.vComment = row[vComment];
 				email_draft.vName = vNameTemp
 				email_draft.vDuration = calcTime()
   
