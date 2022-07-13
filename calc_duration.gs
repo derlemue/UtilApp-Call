@@ -94,6 +94,10 @@
 			Logger.log(m)
 			Logger.log(h+":"+m)
 
+/// add leading zero to minutes if needed
+
+      m = (m < 10) ? "0" + m : m;
+
 /// renunite hours and minutes
 			var vDuration = (h+":"+m)
 			Logger.log(vDuration)
