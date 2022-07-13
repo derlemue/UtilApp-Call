@@ -6,7 +6,7 @@
 //
 // Send Emails on Google Form Submit, get content, parse and send
 // to given Address List
-//
+// 
 //
 // by T. Ledermueller (derlemue.com) | License: GNU GPL-3.0
 //
